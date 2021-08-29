@@ -12,7 +12,7 @@ public class BirdSanctuaryRepository {
 	}
 	
 	static synchronized BirdSanctuaryRepository getInstance() {
-		if(instance==null)
+		if(instance == null)
 			instance = new BirdSanctuaryRepository();
 		return instance;
 			

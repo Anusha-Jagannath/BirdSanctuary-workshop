@@ -2,7 +2,7 @@ package com.bl.birdsanctuary;
 
 import java.util.Objects;
 
-abstract public class Bird {
+public class Bird {
 	
 	enum Color {
 		RED, BLACK_WHITE, GREY, WHITE, BLACK, BLUE, GREEN
@@ -11,6 +11,8 @@ abstract public class Bird {
 	String id;
 	Color color;
 	String name;
+	Boolean canFly;
+	Boolean canSwim;
 	
 	@Override
 	public String toString() {
@@ -36,8 +38,18 @@ abstract public class Bird {
 	
 	
 	
-	abstract void eat();
+	public void swim() {
+		System.out.println(name+" can swim");	
+	}
+
+	
+	public void eat() {
+		System.out.println(name+" can eat");
+	}
+	
+	public void fly() {
+		System.out.println(name+" can fly");
+	}
 	
 	
 }
-
